@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txt_team1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/team1"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/txt_team2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/team2"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@id/txt_team1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="180dp"
+        app:layout_constraintEnd_toStartOf="@id/txt_team2"
+        app:layout_constraintStart_toEndOf="@id/txt_team1"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/txtvalue_team1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/value1"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_team1"
+
+
+        />
+
+    <TextView
+        android:id="@+id/txtvalue_team2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Value2"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="@id/txt_team2"
+        app:layout_constraintTop_toBottomOf="@id/txt_team2"
+
+
+        />
+
+    <Button
+        android:id="@+id/button_inc6_team1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/increament6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtvalue_team1"
+
+
+        />
+
+    <Button
+        android:id="@+id/button_inc12_team1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/increament12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_inc6_team1"
+
+
+        />
+
+    <Button
+        android:id="@+id/button_dinc4_team1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/dincreament4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_inc12_team1"
+
+        />
+
+    <Button
+        android:id="@+id/button_inc6_team2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="98dp"
+        android:text="@string/increamentTeam2_6"
+        app:layout_constraintStart_toEndOf="@id/button_inc6_team1"
+        app:layout_constraintTop_toBottomOf="@id/txtvalue_team2"
+
+
+        />
+
+    <Button
+        android:id="@+id/button_inc12_team2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/inc12_team2"
+        app:layout_constraintStart_toEndOf="@id/button_inc12_team1"
+        app:layout_constraintTop_toBottomOf="@id/button_inc6_team2"
+
+        />
+
+    <Button
+        android:id="@+id/button_dinc4_team2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/dinc4_team2"
+        app:layout_constraintStart_toEndOf="@id/button_dinc4_team1"
+        app:layout_constraintTop_toBottomOf="@id/button_inc12_team2"
+
+
+        />
+
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+</android.support.constraint.ConstraintLayout>

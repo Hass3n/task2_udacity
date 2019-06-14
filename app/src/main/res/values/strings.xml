@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">task2_udacity</string>
+    <string name="team1">Team1</string>
+    <string name="team2">Team2</string>
+    <string name="value1">0</string>
+    <string name="Value2">0</string>
+    <string name="increament6">+6</string>
+    <string name="increament12">+12</string>
+    <string name="dincreament4">-4</string>
+    <string name="increamentTeam2_6">+6</string>
+    <string name="inc12_team2">+12</string>
+    <string name="dinc4_team2">-4</string>
+    <string name="restart">restart</string>
+</resources>
